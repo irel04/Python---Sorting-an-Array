@@ -1,16 +1,16 @@
-def sort(nums):
+def selection_sort(array):
 
     for i in range(9):
         minpos = i
         for j in range(i, 10):
-            if nums[j] < nums[minpos]:
+            if array[j] < array[minpos]:
                 minpos = j
 
-        temp = nums[i]
-        nums[i] = nums[minpos]
-        nums[minpos] = temp
+        temp = array[i]
+        array[i] = array[minpos]
+        array[minpos] = temp
 
-nums = [11, 21, 1, 73, 32, 24, 90, 75, 6, 47]
+my_array = [11, 21, 1, 73, 32, 24, 90, 75, 6, 47]
 
-sort(nums)
-print(nums)
+selection_sort(my_array)
+print(my_array)
