@@ -1,8 +1,8 @@
 def selection_sort(array):
 
-    for i in range(9):
+    for i in range(len(array)-1):
         minpos = i
-        for j in range(i, 10):
+        for j in range(i, len(array)):
             if array[j] < array[minpos]:
                 minpos = j
 
