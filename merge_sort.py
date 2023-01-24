@@ -11,3 +11,18 @@ def merge_sort(array):
 
     merge_sort(left)
     merge_sort(right)
+
+def merge_two_sorted_lists(a,b,array):
+    len_a = len(a)
+    len_b = len(b)
+
+    i = j = k = 0
+
+    while i < len_a and j < len_b:
+        if a[i] <= b[j]:
+            array[k] = a[i]
+            i+=1
+        else:
+            array[k] = b[j]
+            j+=1
+            k+=1
