@@ -11,3 +11,7 @@ def quick_sort(elements, start, end):
         pi = partition(elements, start, end)
         quick_sort(elements, start, pi-1)
         quick_sort(elements, pi+1, end)
+
+def partition(elements, start, end):
+    pivot_index = start
+    pivot = elements[pivot_index]
