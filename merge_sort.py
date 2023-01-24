@@ -36,4 +36,5 @@ def merge_two_sorted_lists(a,b,array):
         j+=1
         k+=1        
 
-        
+merge_sort(my_array)
+print(my_array)
