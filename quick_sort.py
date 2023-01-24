@@ -29,3 +29,6 @@ def partition(elements, start, end):
     swap(pivot_index, end, elements)
 
     return end
+
+quick_sort(my_array, 0, len(my_array)-1)
+print(my_array)
